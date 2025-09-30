@@ -2,9 +2,9 @@
 @inherits LayoutComponentBase
 
 
-<div id="global-loader">
-	<img src="assets/img/loader.svg" class="loader-img" alt="Loader">
-</div>
+@* <div id="global-loader"> *@
+@* 	<img src="assets/img/loader.svg" class="loader-img" alt="Loader"> *@
+@* </div> *@
 
 <div class="page">
 	<Sidebar/>
@@ -27,7 +27,7 @@
 		if (firstRender)
 		{
 			await Task.Delay(110);
-			await JS.InvokeVoidAsync("loadingDashboard");
+			// await JS.InvokeVoidAsync("loadingDashboard");
 		}
 	}
 }
